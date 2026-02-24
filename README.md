@@ -23,6 +23,35 @@ If an unregistered card is scanned, the system identifies it as an unknown card 
 
 ---
 
+## Connections
+
+### RFID RC522 → Arduino UNO
+
+| RFID RC522 Pin | Arduino UNO Pin |
+|----------------|-----------------|
+| SDA (SS)       | 10              |
+| SCK            | 13              |
+| MOSI           | 11              |
+| MISO           | 12              |
+| RST            | 9               |
+| VCC            | 3.3V            |
+| GND            | GND             |
+
+
+
+### LCD (I2C) → Arduino UNO
+
+| LCD I2C Pin | Arduino UNO Pin |
+|-------------|------------------|
+| VCC         | 5V               |
+| GND         | GND              |
+| SDA         | A4               |
+| SCL         | A5               |
+
+> I2C Address used in code: `0x27`
+
+---
+
 ## Working Principle
 
 1. The RFID reader continuously scans for nearby RFID cards.
@@ -48,7 +77,7 @@ If an unregistered card is scanned, the system identifies it as an unknown card 
    - `LiquidCrystal_I2C.h`
    - `TimeLib.h`
 
-2. Connect the hardware components properly.
+2. Connect the hardware components as per the connection table above.
 
 3. Upload the Arduino code to the board.
 
@@ -66,7 +95,7 @@ If an unregistered card is scanned, the system identifies it as an unknown card 
 - Attendance is stored in an integer array.
 - Attendance percentage is calculated using:
 
-  ``
+  ```
   percentage = (presentClasses * 100.0) / totalClasses;
   ```
 
@@ -84,6 +113,7 @@ If an unregistered card is scanned, the system identifies it as an unknown card 
   - Attendance Percentage
   - Date
 
+---
 
 ## Applications
 
@@ -91,5 +121,3 @@ If an unregistered card is scanned, the system identifies it as an unknown card 
 - Office employee check-in systems  
 - Event access control systems  
 - Secure RFID-based identity logging  
-
-
