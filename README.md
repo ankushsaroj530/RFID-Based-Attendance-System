@@ -51,7 +51,7 @@ If an unregistered card is scanned, the system identifies it as an unknown card 
 > I2C Address used in code: `0x27`
 
 ---
-
+![Project Image](WhatsApp Image 2026-03-13 at 20.10.52 (1).jpeg)
 ## Working Principle
 
 1. The RFID reader continuously scans for nearby RFID cards.
