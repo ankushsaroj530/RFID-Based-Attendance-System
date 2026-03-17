@@ -121,3 +121,9 @@ If an unregistered card is scanned, the system identifies it as an unknown card 
 - Office employee check-in systems  
 - Event access control systems  
 - Secure RFID-based identity logging  
+
+
+## Preview 
+![Project Image](demo1.jpeg)
+![Project Image](demo2.jpeg)
+![Project Image](demo3.jpeg)
